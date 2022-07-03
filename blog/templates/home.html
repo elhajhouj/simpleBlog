@@ -1,0 +1,9 @@
+<h1>All Posts</h1>
+
+{% for post in allPosts %}
+
+
+<h1> <a href=" {% url 'article-detail' post.pk %} "> {{post.title}}</h1>
+<p>{{post.auth}}</p>
+{% endfor %}
+
